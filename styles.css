@@ -72,9 +72,8 @@ main {
 
 .flex-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .flex-container img {
@@ -86,8 +85,8 @@ main {
 
 .text-right {
     max-width: 600px;
-    margin-left: 20px;
     text-align: left;
+    margin-left: 20px;
 }
 
 .justify-text {
@@ -103,5 +102,4 @@ main {
 .social-media a {
     color: #333;
     background: #fff;
-    border: 1px solid #ddd;
-   
+    border: 1px solid
