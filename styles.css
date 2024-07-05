@@ -10,18 +10,12 @@ body {
     font-family: 'Rajdhani', sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Garante que a página ocupe pelo menos toda a altura da tela */
 }
 
 .header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,52 +51,25 @@ body {
     margin: 0 auto;
 }
 
-.about {
+.about,
+.services,
+.contact {
     display: flex;
-    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
 }
 
-.about img {
+.about img,
+.services img {
     width: 200px; /* Ajuste conforme necessário */
     border-radius: 50%;
     margin-bottom: 1rem; /* Espaço abaixo da imagem */
 }
 
-.services {
-    display: flex;
-    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.services img {
-    width: 200px; /* Ajuste conforme necessário */
-    margin-bottom: 1rem; /* Espaço abaixo da imagem */
-}
-
-.contact {
-    display: flex;
-    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
-    margin-top: auto; /* Mantém o rodapé no final da página */
-}
-
 .social-links {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .social-links a {
@@ -114,9 +81,11 @@ body {
     border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-    .about img,
-    .services img {
-        width: 150px; /* Ajuste conforme necessário para telas menores */
-    }
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
 }
