@@ -88,8 +88,9 @@
 
         .flex-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
         }
 
         .flex-container img {
@@ -165,11 +166,13 @@
                 <div class="flex-container">
                     <img src="servicos.jpg" alt="Foto de Serviços de Nutrição">
                     <div class="text-right justify-text">
-                        <p>Planos de Consultoria Online;</p>
-                        <p>Acompanhamento e Tirada de Dúvidas em horário comercial;</p>
-                        <p>Monitoria de adesão alimentar individualizada;</p>
-                        <p>Orientação Nutricional para atletas e praticantes de atividade física;</p>
-                        <p>Workshops e palestras.</p>
+                        <ul>
+                            <li>Planos de Consultoria Online;</li>
+                            <li>Acompanhamento e Tirada de Dúvidas em horário comercial;</li>
+                            <li>Monitoria de adesão alimentar individualizada;</li>
+                            <li>Orientação Nutricional para atletas e praticantes de atividade física;</li>
+                            <li>Workshops e palestras.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -197,3 +200,4 @@
     </footer>
 </body>
 </html>
+
