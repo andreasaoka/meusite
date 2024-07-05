@@ -72,7 +72,7 @@ main {
 
 .flex-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -104,6 +104,4 @@ main {
     color: #333;
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 50%;
-    font-size: 24px;
    
