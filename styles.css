@@ -71,16 +71,17 @@ main {
     align-items: center;
 }
 
-.section-content .text-left {
+.section-content .text-right {
     text-align: left;
     max-width: 50%;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .section-content img.center-image {
     display: block;
     max-width: 50%;
     height: auto;
+    margin-right: 20px; /* Ajuste o espaçamento entre a imagem e o texto conforme necessário */
     margin-left: auto;
 }
 
