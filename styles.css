@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /* Garante que a página ocupe pelo menos toda a altura da tela */
 }
 
 .header {
@@ -50,9 +50,6 @@ body {
     width: 100%;
     padding: 4rem 0;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .content {
@@ -62,6 +59,7 @@ body {
 
 .about {
     display: flex;
+    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
@@ -70,11 +68,12 @@ body {
 .about img {
     width: 200px; /* Ajuste conforme necessário */
     border-radius: 50%;
-    margin-right: 1rem;
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
 }
 
 .services {
     display: flex;
+    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
@@ -82,10 +81,14 @@ body {
 
 .services img {
     width: 200px; /* Ajuste conforme necessário */
-    margin-right: 1rem;
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
 }
 
 .contact {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
 }
 
