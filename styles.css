@@ -90,6 +90,10 @@ main {
     text-align: left;
 }
 
+.justify-text {
+    text-align: justify;
+}
+
 .social-media {
     display: flex;
     justify-content: center;
@@ -102,11 +106,3 @@ main {
     border: 1px solid #ddd;
     border-radius: 50%;
     font-size: 24px;
-    padding: 10px;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.social-media a:hover {
-    background: #ddd;
-}
