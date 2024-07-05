@@ -57,15 +57,24 @@ main {
     flex-wrap: wrap;
 }
 
+.section-content {
+    text-align: center;
+}
+
+.section-content h2 {
+    margin-bottom: 20px;
+}
+
+.section-content img.center-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
 section {
     width: 30%;
     margin: 20px 0;
-}
-
-section img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
 }
 
 footer {
