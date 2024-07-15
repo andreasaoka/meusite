@@ -15,12 +15,18 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
         body {
             font-family: 'Rajdhani', sans-serif;
             background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 0;
         }
 
         header, footer {
@@ -29,6 +35,7 @@
             width: 100%;
             text-align: center;
             padding: 1rem 0;
+            flex-shrink: 0;
         }
 
         header .header-content {
@@ -48,6 +55,7 @@
             width: 100%;
             text-align: center;
             padding: 1rem 0;
+            flex-shrink: 0;
         }
 
         nav ul {
@@ -73,16 +81,17 @@
 
         main {
             width: 100%;
-            max-width: 1200px;
-            margin: 20px auto;
+            margin: 0;
             padding: 20px;
             background-image: url('background.jpg'); /* Usando o arquivo background.jpg */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 100vh; /* Garante que o main ocupe toda a altura da tela */
+            flex: 1;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             color: #fff; /* Garante que o texto fique legível sobre o background */
         }
 
