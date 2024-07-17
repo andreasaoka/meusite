@@ -1,1 +1,103 @@
-sss
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre Asaoka - Nutricionista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo_transparent_bg.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #f4f4f4;
+            overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header .header-content {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        header .header-content a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header .header-content a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        main {
+            width: 100%;
+            height: calc(100vh - 68px); /* Altura da tela menos a altura do cabeçalho */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-top: 68px; /* Altura do cabeçalho */
+            background-color: #f4f4f4;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            padding-top: 5.5mm; /* Ajuste para 5.5mm de padding superior para cobrir a logo do site */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="https://andreasaoka.github.io/meusite/" target="_blank">Meu Site</a>
+            <a href="https://wa.me/5511999478135" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com/andreasaoka" target="_blank">Instagram</a>
+        </div>
+    </header>
+    <main>
+        <iframe src="https://my.spline.design/clockdigitalinteractioncopy-44757d81cc449d407b5d747bb30ff935/" allowfullscreen></iframe>
+    </main>
+    <footer>
+        <p>&copy; 2024 Andre Asaoka. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
