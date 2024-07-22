@@ -1,1 +1,97 @@
-a
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre Asaoka - Links</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo_transparent_bg.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #545454;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 400px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="headerlink.jpg" alt="Andre Asaoka">
+    </header>
+    <main>
+        <div class="links">
+            <a href="https://andreasaoka.github.io/meusite/" target="_blank">Meu Site</a>
+            <a href="https://wa.me/5511999478135" target="_blank">Fale Comigo</a>
+            <a href="https://example.com/estudos" target="_blank">Estudos</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Andre Asaoka. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
