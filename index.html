@@ -145,6 +145,29 @@
             background: #ddd;
         }
 
+        .schedule-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .schedule-button i {
+            margin-right: 10px;
+        }
+
+        .schedule-button:hover {
+            background-color: #0056b3;
+        }
+
         @media (max-width: 768px) {
             header .header-content img {
                 margin-left: 15px; /* Move o logo um pouco para a direita no celular */
@@ -207,6 +230,9 @@
                             <a href="https://wa.me/5511999478135" target="_blank"><i class="fab fa-whatsapp"></i></a>
                             <a href="https://lattes.cnpq.br/7013460544008543" target="_blank"><i class="fas fa-file-alt"></i></a>
                         </div>
+                        <a class="schedule-button" href="https://wa.me/5511999478135" target="_blank">
+                            <i class="fas fa-bell"></i> Agende sua consulta
+                        </a>
                     </div>
                 </div>
             </div>
@@ -217,4 +243,3 @@
     </footer>
 </body>
 </html>
-
