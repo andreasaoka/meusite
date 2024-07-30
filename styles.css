@@ -20,6 +20,10 @@ header, footer {
     padding: 1rem 0;
 }
 
+header {
+    background-color: #545454; /* Azul */
+}
+
 header .header-content {
     display: flex;
     align-items: center;
