@@ -205,7 +205,16 @@
             object-fit: cover;
         }
 
+        @media (min-width: 769px) {
+            .swiper-pagination {
+                bottom: 10px; /* Ajuste para computadores */
+            }
+        }
+
         @media (max-width: 768px) {
+            .swiper-pagination {
+                bottom: 30px; /* Ajuste para celulares */
+            }
             header .header-content img {
                 margin-left: 15px;
             }
