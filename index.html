@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="icon" href="logo.png" type="image/png">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
         * {
             margin: 0;
@@ -21,7 +20,6 @@
         html, body {
             height: 100%;
             width: 100%;
-            overflow-x: hidden; /* Evita que a página se estenda para a direita */
         }
 
         body {
@@ -55,7 +53,7 @@
         }
 
         header {
-            background-color: #545454;
+            background-color: #545454; /* cinzinha, fiz só pra cor */
         }
 
         nav {
@@ -89,9 +87,10 @@
 
         main {
             width: 100%;
+            min-width: 100vw; /* Garante que o main ocupe toda a largura da tela */
             margin: 0;
             padding: 20px;
-            background-image: url('background.jpg');
+            background-image: url('background.jpg'); /* Usando o arquivo background.jpg */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -100,7 +99,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: #fff; /* Garante que o texto fique legível sobre o background */
         }
 
         .section-content {
@@ -110,7 +109,7 @@
 
         .section-content h2 {
             margin-bottom: 20px;
-            color: #FFFFFF;
+            color: #FFFFFF; /* Cor bege claro */
         }
 
         .flex-container {
@@ -165,7 +164,7 @@
             cursor: pointer;
             text-decoration: none;
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
         }
 
         .schedule-button i {
@@ -176,20 +175,9 @@
             background-color: #0056b3;
         }
 
-        .swiper-container {
-            width: 100%;
-            height: 300px;
-        }
-
-        .swiper-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         @media (max-width: 768px) {
             header .header-content img {
-                margin-left: 15px;
+                margin-left: 15px; /* Move o logo um pouco para a direita no celular */
             }
         }
     </style>
@@ -208,18 +196,6 @@
         </ul>
     </nav>
     <main>
-       <section>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="foto1.png" alt="Foto 1"></div>
-                    <div class="swiper-slide"><img src="foto2.png" alt="Foto 2"></div>
-                    <div class="swiper-slide"><img src="foto3.png" alt="Foto 3"></div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-       </section> 
        <section id="sobre" class="vertical-center" data-aos="fade-up">
             <div class="section-content">
                 <h2>Sobre Mim</h2>
@@ -294,24 +270,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
     </script>
 </body>
 </html>
