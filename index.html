@@ -237,6 +237,15 @@
         }
 
         @media (max-width: 768px) {
+            .swiper-container {
+                width: 100vw; /* Faz o carrossel ocupar toda a largura da tela */
+                height: 100vh; /* Faz o carrossel ocupar toda a altura da tela */
+            }
+            .swiper-slide img {
+                width: 100vw; /* Faz a imagem ocupar toda a largura do container */
+                height: 100vh; /* Faz a imagem ocupar toda a altura do container */
+                object-fit: cover; /* Cobre o container sem distorcer a imagem */
+            }
             .swiper-pagination {
                 bottom: 10px; /* Ajuste para celulares */
             }
