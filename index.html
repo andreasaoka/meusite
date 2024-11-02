@@ -113,6 +113,20 @@
             margin-bottom: 20px;
             color: #FFFFFF;
         }
+        
+        .image-container img {
+            width: 100%; /* A imagem ocupa toda a largura do contêiner */
+        }
+
+        .image-container {
+            width: 100vw; /* Garante que o contêiner da imagem ocupe toda a largura da tela */
+            margin: 0 auto; /* Centraliza o contêiner da imagem */
+        }
+
+        .text-right {
+            margin-left: 0px; /* Espaço à esquerda do texto em relação à imagem */
+            padding: 20px; /* Adiciona espaço interno no contêiner de texto */
+        }
 
         .flex-container {
             display: flex;
@@ -295,7 +309,9 @@
             <div class="section-content">
                 <h2>Sobre Mim</h2>
                 <div class="flex-container">
-                    <img src="sobre.jpg" alt="Foto de Andre Asaoka">
+                    <div class="image-container">
+                        <img src="sobre.jpg" alt="Foto de Andre Asaoka">
+                    </div>
                     <div class="text-right">
                         <p>Amante da atividade física e alimentação sob a qualidade de vida e performance esportiva, coleciono experiências e me interesso por modalidades variadas.  Aliando saberes do método cientifico ao cuidado individualizado, vamos elaborar uma estratégia de fácil adesão e grandes resultados.</p>
                         <p>Meu trabalho inclui não apenas o atendimento nutricional regular, mas também toda a atenção e cuidado que são fundamentais para o sucesso do paciente.</p>
@@ -314,7 +330,9 @@
             <div class="section-content">
                 <h2>Serviços</h2>
                 <div class="flex-container">
-                    <img src="servicos.jpg" alt="Foto de Serviços de Nutrição">
+                    <div class="image-container">
+                        <img src="servicos.jpg" alt="Foto de Serviços de Nutrição">
+                    </div>
                     <ul class="text-right">
                         <li>Consultoria Online Personalizada.</li>
                         <li>Acompanhamento e Tirada de Dúvidas em horário comercial.</li>
