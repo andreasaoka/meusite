@@ -325,10 +325,14 @@
             header { 
                 display: none; /* Oculta a imagem, a tira de cima da header no notebook e maiores dispositivos */
             }
-            .swiper-container {
-                height: 550px; /* Aumentei pra dar pra ver melhor as fotos no pc */
+             .swiper-container {
+                height: 650px; /* Aumentei pra dar pra ver melhor as fotos no pc */
                 object-fit: cover; /* Mantém a proporção da imagem e cobre o slide */
                 width: 100vw; /* Faz o carrossel ocupar toda a largura da tela */
+            }
+            .swiper-slide video {
+                height: 800px;
+                margin-top: -135px; /* Ajusta 10px para cima; aumente ou diminua conforme necessário */
             }
         }
 
@@ -380,9 +384,11 @@
     <main>
         <section class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="foto1.png" alt="Foto 1"></div>
-                <div class="swiper-slide"><img src="foto2.png" alt="Foto 2"></div>
-                <div class="swiper-slide"><img src="foto3.png" alt="Foto 3"></div>
+                <div class="swiper-slide"><img src="midia1.png" alt="Foto 1"></div>
+                <div class="swiper-slide">
+                    <video src="midia2.mp4" alt="Foto 2" muted autoplay loop></video>
+                </div>
+                <div class="swiper-slide"><img src="midia3.png" alt="Foto 3"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
